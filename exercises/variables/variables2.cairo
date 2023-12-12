@@ -1,12 +1,12 @@
 // variables2.cairo
 // Execute `starklings hint variables2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 use debug::PrintTrait;
+use array::ArrayTrait;
 
 fn main() {
-    let x;
-    if x == 10 {
+    let mut x: Array<felt252> = ArrayTrait::new();
+    if x.len() == 10 {
         ('x is ten!').print();
     } else {
         ('x is not ten!').print();
